@@ -103,6 +103,14 @@ def delete_student(id):
     conn.close()
     return redirect('/')
 
+@app.route('/about')
+def about():
+    return "About Page"
+
+@app.route('/contact')
+def contact():
+    return "Contact Us"
+
 # ----------------------
 # Run App
 # ----------------------
